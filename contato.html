@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <h1>Inclusion</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0" aria-label="Voltar para a página inicial">Home</a></li>
+                <li><a href="acessibilidade_pratica.html" tabindex="1" aria-label="Página sobre Acessibilidade na prática">Acessibilidade na prática</a></li>
+                <li><a href="historias.html" tabindex="2" aria-label="Histórias inspiradoras sobre acessibilidade">Histórias</a></li>
+                <li><a href="glossario.html" tabindex="3" aria-label="Glossário de termos sobre acessibilidade">Glossário</a></li>
+                <li><a href="contato.html" class="active" tabindex="4" aria-label="Página de contato">Contato</a></li>
+                <li><a href="config.html" tabindex="5" aria-label="Configurações de acessibilidade">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button class="flutuante" onclick="ativarLeituraVozAlta()" aria-label="Ativar leitura em voz alta">🎤</button>
+    <button class="flutuanteX" onclick="pararLeituraVozAlta()" aria-label="Parar leitura em voz alta">❌</button>
+    
+
+    <main>
+        <h1>Quer dar alguma sugestão de termos para adicionar ao site?</h1>
+        
+        <form>
+    <h2>Sugira um Novo Termo</h2>
+
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" aria-describedby="nome-desc" required>
+        <span id="nome-desc" aria-hidden="true">Campo obrigatório</span>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-describedby="email-desc" required>
+        <span id="email-desc" aria-hidden="true">Campo obrigatório</span>
+        <br>
+
+        <label for="termo">Termo Sugerido:</label>
+        <input type="text" id="termo" name="termo" aria-describedby="termo-desc" required>
+        <span id="termo-desc" aria-hidden="true">Campo obrigatório</span>
+        <br>
+
+        <label for="definicao">Definição ou Descrição do Termo:</label>
+        <textarea id="definicao" name="definicao" aria-describedby="definicao-desc" required></textarea>
+        <span id="definicao-desc" aria-hidden="true">Campo obrigatório</span>
+        <br>
+
+        <button type="submit">Enviar Sugestão</button>
+</form>
+
+</body>
+</html>
+
+    </main>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <h1 class="title">Inclusion</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0" aria-label="Voltar para a página inicial">Home</a></li>
+                <li><a href="acessibilidade_pratica.html" tabindex="1" aria-label="Página sobre Acessibilidade na prática">Acessibilidade na prática</a></li>
+                <li><a href="historias.html" tabindex="2" aria-label="Histórias inspiradoras sobre acessibilidade">Histórias</a></li>
+                <li><a href="glossario.html" tabindex="3" aria-label="Glossário de termos sobre acessibilidade">Glossário</a></li>
+                <li><a href="contato.html" tabindex="4" aria-label="Página de contato">Contato</a></li>
+                <li><a href="config.html" class="active" tabindex="5" aria-label="Configurações de acessibilidade">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button class="flutuante" onclick="ativarLeituraVozAlta()" aria-label="Ativar leitura em voz alta">🎤</button>
+    <button class="flutuanteX" onclick="pararLeituraVozAlta()" aria-label="Parar leitura em voz alta">❌</button>
+
+
+    <main>
+        <h1>Configurações de Acessibilidade</h1>
+        <label for="contrast-toggle">
+            <input type="checkbox" id="contrast-toggle">
+            Ativar Alto Contraste
+        </label>
+
+    </main>

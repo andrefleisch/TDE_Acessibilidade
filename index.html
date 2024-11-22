@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <h1 class="title">Inclusion</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active" tabindex="0" aria-label="Voltar para a página inicial">Home</a></li>
+                <li><a href="acessibilidade_pratica.html" tabindex="1" aria-label="Página sobre Acessibilidade na prática">Acessibilidade na prática</a></li>
+                <li><a href="historias.html" tabindex="2" aria-label="Histórias inspiradoras sobre acessibilidade">Histórias</a></li>
+                <li><a href="glossario.html" tabindex="3" aria-label="Glossário de termos sobre acessibilidade">Glossário</a></li>
+                <li><a href="contato.html" tabindex="4" aria-label="Página de contato">Contato</a></li>
+                <li><a href="config.html" tabindex="5" aria-label="Configurações de acessibilidade">Configurações</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <button class="flutuante" onclick="ativarLeituraVozAlta()" aria-label="Ativar leitura em voz alta">🎤</button>
+    <button class="flutuanteX" onclick="pararLeituraVozAlta()" aria-label="Parar leitura em voz alta">❌</button>
+    
+
+    <main>
+        
+        
+        <h2>O que é acessibilidade?</h2>
+        <img src="img/acessibilidade-web-.webp" 
+            alt="Foto sobre acessibilidade"
+            height="275px">
+
+        <p>
+            Segundo a Lei Brasileira de Inclusão da Pessoa com Deficiência (LBI), acessibilidade é a possibilidade e 
+            condição de alcance para utilização, com segurança e autonomia, de espaços, mobiliários, equipamentos urbanos, 
+            edificações, transportes, informação e comunicação, inclusive seus sistemas e tecnologias, bem como de outros 
+            serviços e instalações abertos ao público, de uso público ou privados de uso coletivo, tanto na zona urbana como 
+            na rural, por pessoa com deficiência ou com mobilidade reduzida. 
+        </p>
+
+        <h2>Existem vários tipos de acessibilidade:</h2>
+        <ul>
+            <li>Acessibilidade Física: Rampas, elevadores, sinalizacao tatil</li>
+            <li>Acessibilidade Digital: Sites, aplicativos, legendas</li>
+            <li>Acessibilidade Comunicacional: Libras, braille</li>
+            <li>Acessibilidade Atitudinal: Combate ao preconceito</li>
+        </ul>
+
+        <h2>A acessibilidade traz diversos benefícios para a sociedade, como:</h2>
+        <ul>
+            <li>Inclusão social: Permite que pessoas com deficiencia tenham acesso igualitário a servicos, produtos, etc.</li>
+            <li>Melhora da qualidade de vida: A acessibilidade permite que pessoas com deficiência realizem atividades cotidianas com autonomia e segurança.</li>
+            <li>Melhora do SEO: Sites acessíveis aparecem para mais pessoas nos resultados de busca, pois os mecanismos de busca consideram a acessibilidade como um bom fator de classificação. </li>
+        </ul>
+
+        <h2>Vídeo sobre a importância da acessibilidade:</h2>
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/PhqmoYmtPZ0" 
+            title="Vídeo sobre a importância da acessibilidade" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+    </main>
+
+
+</body>
+</html>
